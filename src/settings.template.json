@@ -1,0 +1,13 @@
+{
+  "weight_path": "",
+  "output_path": "",
+  "uploaded_path": "",
+  "records_expired_days": 7,
+  "cleanup_per_minutes": 30,
+  "model_attrs": {
+    "confidence": 0.25,
+    "agnostic_nms": false,
+    "iou": 0.45,
+    "image_size": 640
+  }
+}

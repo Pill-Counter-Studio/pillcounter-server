@@ -1,0 +1,36 @@
+@SERVER_URL=http://localhost:8888
+@MOCK_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwidXNlcklkIjoieHh4eCIsImlhdCI6MTUxNjIzOTAyMn0.AfYwD5k-OW_Y8PqtCd22Rkcn1-jwuZ5RPttrBxKiP4U
+@USER_ID=2ee807b1ec8fdfda333d8576fdf85b305cc9b17ec738ecfd6c57f1db66d01f25
+@ORDER_ID=
+
+### Model
+GET {{SERVER_URL}}/images/predict
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+### Images
+GET {{SERVER_URL}}/images/raw
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+###
+GET {{SERVER_URL}}/users
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+### Records
+GET {{SERVER_URL}}/records
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+###
+DELETE {{SERVER_URL}}/records/ebb44205-65f9-4ed7-ab63-db145227273c
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+###
+GET {{SERVER_URL}}/records/user/{{USER_ID}}
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+###
+GET {{SERVER_URL}}/records/user/{{USER_ID}}?with_images=true
+Authorization: Bearer {{MOCK_JWT_TOKEN}}
+
+### Orders
+GET {{SERVER_URL}}/orders
+Authorization: Bearer {{MOCK_JWT_TOKEN}}

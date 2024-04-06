@@ -1,0 +1,10 @@
+.env
+__pycache__
+test_imgs
+yolov5-pkgs
+settings.json
+uploaded
+output
+yolov5-pkgs
+log
+.DS_Store
