@@ -31,6 +31,8 @@ def check_envs():
             raise Exception("Cannot found environment variable: DATABASE_URL")
         if not os.getenv("MINIO_ENDPOINT"):
             raise Exception("Cannot found environment variable: MINIO_ENDPOINT")
+        if not os.getenv("WEB_ACCESS_MINIO_ENDPOINT"):
+            raise Exception("Cannot found environment variable: WEB_ACCESS_MINIO_ENDPOINT")
         if not os.getenv("MINIO_ACCESS_KEY"):
             raise Exception("Cannot found environment variable: MINIO_ACCESS_KEY")
         if not os.getenv("MINIO_SECRET_KEY"):

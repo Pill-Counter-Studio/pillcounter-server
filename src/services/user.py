@@ -21,7 +21,7 @@ class UserService:
         exists = self.user_repo.get_user_by_email(email=user_dto.email)
         if exists is not None:
             return exists
-        self.user_repo.create_user(user_dto=user_dto)
+        return self.user_repo.create_user(user_dto=user_dto)
 
     def decrease_free_tried_count(self, user_id: str) -> int:
         return self.user_repo.decrease_free_tried_count(user_id=user_id)

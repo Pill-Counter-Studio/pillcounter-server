@@ -5,3 +5,14 @@ alembic.ini
 settings.json
 settings.template.json
 __pycache__
+log
+output
+uploaded
+.vscode
+.env
+.env.template
+.gitignore
+.python-version
+*.md
+build.sh
+Dockerfile

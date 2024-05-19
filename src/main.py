@@ -256,4 +256,4 @@ app.include_router(OrderRouter)
 
 if __name__ == "__main__":
     check_envs()
-    uvicorn.run(app="main:app", host="127.0.0.1", port=int(os.getenv("PORT")), reload=os.getenv("DEV_MODE", "").upper()=="TRUE")
+    uvicorn.run(app="main:app", host="0.0.0.0", port=int(os.getenv("PORT")), reload=os.getenv("DEV_MODE").upper()=="TRUE")
