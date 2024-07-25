@@ -8,3 +8,4 @@ output
 yolov5-pkgs
 log
 .DS_Store
+*bkp.txt
